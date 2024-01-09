@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+}
+p,
+a,
+span,
+textarea,
+input {
+	font-family: "Fira Sans", sans-serif;
+	font-size: var(--font-regular);
+	color: var(--lightBlack);
+}
+a {
+	text-decoration: none;
+}
+
+:root {
+	/* colors */
+	--white: #ffffff;
+	--violett: #980af5;
+	--black: #000000;
+	--lightBlack: #3a3a3f;
+	--veryLightBlack: #3a3a3fb5;
+	--lightViolett: #dbd9ff;
+
+	--chatOpposite: #970af53e;
+
+	/* font-sizes */
+	--font-big: 20px;
+	--font-regular: 16px;
+
+	/* margins */
+	--baseMargin: 20px;
+	--smallMargin: 13px;
+	--iconSize: 40px;
+}
+
+/* font-size-classes */
+
+.font-header {
+	font-size: var(--font-big);
+	font-weight: 500;
+	color: var(--violett);
+}
+.font-header-black {
+	font-size: var(--font-big);
+	font-weight: 500;
+}
+.font-small-header {
+	font-size: var(--font-regular);
+	font-weight: 600;
+}
+.font-regular {
+	font-size: var(--font-regular);
+	font-weight: 400;
+}
+.font-regular-big {
+	font-size: var(--font-regular);
+	font-weight: 500;
+}
+
+/* global styles */
+
+/* violett btn*/
+.violett-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--violett);
+	position: relative;
+	padding: var(--smallMargin) 0;
+	border-radius: 100px;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	color: var(--white);
+}
+.violett-btn p {
+	color: var(--white);
+}
+.violett-btn span {
+	position: absolute;
+	right: var(--smallMargin);
+	color: var(--white);
+}
+
+/* violett btn outline */
+.violett-btn-outline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: var(--smallMargin) 0;
+	border-radius: 100px;
+	cursor: pointer;
+	border: 2px solid var(--violett);
+}
+.violett-btn-outline p {
+	color: var(--violett);
+}
+.violett-btn-outline span {
+	position: absolute;
+	right: var(--smallMargin);
+	color: var(--white);
+}
+
+/* violett icon */
+.icon {
+	background-color: var(--violett);
+	width: var(--iconSize);
+	height: var(--iconSize);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: var(--smallMargin);
+	flex-shrink: 0;
+}
+.icon span {
+	color: var(--white);
+}

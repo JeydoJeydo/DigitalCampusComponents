@@ -1,0 +1,14 @@
+{
+	"title": "HAWK Bibliothek",
+	"description": "Bibliothek (Ausleihe nur mit Ausweis)",
+	"components": [
+		{
+			"title": "Component One",
+			"description": "description one"
+		},
+		{
+			"title": "Component Two",
+			"description": "Component Three"
+		}
+	]
+}
