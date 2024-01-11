@@ -70,9 +70,9 @@
 									</div>
 								</div>
 							</div>
-							<p class="font-header">HAWK Bibliothek</p>
-							<p class="description">Bibliothek (Ausleihe nur mit Ausweis)</p>
 						</div>
+						<p class="font-header">HAWK Bibliothek</p>
+						<p class="description">Bibliothek (Ausleihe nur mit Ausweis)</p>
 						<div class="card-links">
 							<div class="card-static-links">
 								<a href="">
@@ -176,6 +176,15 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 100dvh;
+			position: fixed;
+		}
+		div.main-wrapper {
+			height: 100dvh;
+			overflow-x: scroll;
+		}
+
+		div.top-ui-placeholder {
+			margin-bottom: 50vh;
 		}
 
 		div.current-visitors {
@@ -230,7 +239,8 @@
 		}
 
 		div.card-info {
-			margin-bottom: var(--baseMargin);
+			margin-bottom: calc(var(--baseMargin) + (var(--iconSize) / 2));
+			margin-bottom: calc(var(--iconSize) / 2);
 		}
 		div.hero-img {
 			background-image: url("https://thispersondoesnotexist.com/");
@@ -265,13 +275,18 @@
 		}
 
 		p.font-header {
-			margin: calc(var(--baseMargin) + (var(--iconSize) / 2)) 0 var(--smallMargin) 0;
+			position: sticky;
+			top: 0;
+			background-color: var(--white);
+			padding-top: var(--baseMargin);
+			padding-bottom: var(--smallMargin);
 		}
 		p.description {
 			color: var(--veryLightBlack);
 		}
 
 		div.card-links {
+			margin-top: calc(var(--baseMargin) * 2);
 			margin-bottom: calc(var(--baseMargin) * 2);
 		}
 		div.card-static-links {
